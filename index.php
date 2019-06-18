@@ -13,44 +13,64 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        *{
+            margin: 0;
+        }
+        .head{
+            width: 100%;
+            height: 100px;
+            background-color: aquamarine;
+        }
         .label{
             text-align: left;
+        }
+        .text{
+            width: 1150px;
+        }
+        .buttonS{
+            background-color: mediumspringgreen;
+        }
+        .buttonR{
+            background-color: lightcoral;
         }
     </style>
 </head>
 <body>
+<div class="head">
+    <h1 style="text-align: center">Customer Form</h1>
+</div>
 <form action="customerController.php" method="post" id="nameForm">
     <table>
         <tr>
             <th class="label">Customer ID</th>
             <th>:</th>
-            <th><input type="text" placeholder="input customer id" name="cid" id="txtcid"></th>
+            <th><input type="text" placeholder="input customer id" name="cid" id="txtcid" class="text"></th>
         </tr>
         <tr>
             <th class="label">Customer Name</th>
             <th>:</th>
-            <th><input type="text" placeholder="input customer name" name="cName" id="txtname"></th>
+            <th><input type="text" placeholder="input customer name" name="cName" id="txtname" class="text"></th>
         </tr>
         <tr>
             <th class="label">Customer Address</th>
             <th>:</th>
-            <th><input type="text" placeholder="input customer address" name="cAddress" id="txtaddress"></th>
+            <th><input type="text" placeholder="input customer address" name="cAddress" id="txtaddress" class="text"></th>
         </tr>
         <tr>
             <th class="label">Customer Mobile No</th>
             <th>:</th>
-            <th><input type="text" placeholder="input customer mob" name="tel" id="txttel"></th>
+            <th><input type="text" placeholder="input customer mob" name="tel" id="txttel" class="text"></th>
         </tr>
         <tr>
             <th class="label">Credit Limit</th>
             <th>:</th>
-            <th><input type="text" placeholder="input credit limit" name="sal" id="txtsal"></th>
+            <th><input type="text" placeholder="input credit limit" name="sal" id="txtsal" class="text"></th>
         </tr>
         <br>
         <br>
         <tr>
-            <th><button type="submit" form="nameForm" value="submit">submit</button></th>
-            <th><input type="reset" value="rest"></th>
+            <th><button type="submit" form="nameForm" value="submit" class="buttonS">submit</button></th>
+            <th><input type="reset" value="rest" class="buttonR"></th>
         </tr>
     </table>
 </form>
